@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+header {
+  background: #0f172a;
+  height: 100px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.logo-img {
+  height: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #38bdf8;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.hero {
+  padding: 150px 2rem 80px;
+  text-align: center;
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+}
+
+.about {
+  display: flex;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,255,255,0.15);
+  transition: transform 0.4s;
+}
+
+.about img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #38bdf8;
+}
+
+.service-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  padding: 2.5rem 1.5rem;
+  border-radius: 16px;
+  width: 240px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #334155;
+  text-align: center;
+}
+
+.service:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #38bdf888;
+}
+
+.service i.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+  transition: transform 0.3s ease;
+}
+
+.service:hover .icon {
+  transform: scale(1.2);
+}
+
+.service h3 {
+  font-size: 1.2rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.service p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials {
+  padding: 4rem 2rem;
+  background: #1e293b;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #38bdf8;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-grid img:hover {
+  transform: scale(1.05);
+}
+
+.cta {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta-btn {
+  background: linear-gradient(to right, #38bdf8, #0ea5e9);
+  color: #0f172a;
+  padding: 1rem 2.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 20px rgba(56,189,248,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(56,189,248,0.5);
+}
+
+.coaching, .diet-coaching {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.coaching h2, .diet-coaching h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+}
+
+.coaching p, .diet-coaching p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.coaching ul, .diet-coaching ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.coaching ul li, .diet-coaching ul li {
+  background: #1e293b;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #facc15;
+  margin-top: 1rem;
+}
+
+.consult {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #94a3b8;
+}
+
+footer {
+  background: #0f172a;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-content p {
+  color: #94a3b8;
+  margin: 0.4rem 0;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #38bdf8;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #facc15;
+}
+
+.copy {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #0f172a;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 100%;
+    right: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* LIGHTBOX STYLES */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #f8fafc;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.lightbox .prev,
+.lightbox .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #38bdf8;
+  cursor: pointer;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+.lightbox .prev {
+  left: 20px;
+}
+
+.lightbox .next {
+  right: 20px;
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover {
+  color: #facc15;
+}
